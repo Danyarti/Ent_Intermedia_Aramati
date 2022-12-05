@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<h1> Lista de Nuestros Productos </h1>
+{% endblock %}
+
+{% block content %}
+{%for tienda in tienda %}
+<p>{{  tienda  }}</p>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<h1> Busqueda de Productos </h1>
+{% endblock %}
+
+{% block content %}
+<form action= "{% url 'tienda-index' %}" method= "get">
+    <input type="text" name="producto" id="product">
+    <input type="submit" value="Buscar" class="btn btn-primary">
+
+</form>
+
+{% endblock %}

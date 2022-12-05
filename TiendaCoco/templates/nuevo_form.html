@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+<h1> Vender Nuevos Productos </h1>
+{% endblock %}
+
+{% block content %}
+<form action= "{% url 'tienda-form' %}" method="post"> {% csrf_token %}
+
+    {{ form.as_table }}
+
+    <input type="submit" value="Agregar" class="btn-sucess">
+</form> 
+{% endblock %}
